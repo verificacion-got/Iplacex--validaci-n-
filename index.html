@@ -10,7 +10,7 @@
         /* --- ESTILOS GENERALES --- */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f2f2f2; /* Gris claro de fondo */
+            background-color: #f2f2f2;
             margin: 0;
             padding: 20px;
             display: flex;
@@ -21,7 +21,7 @@
 
         .container {
             width: 100%;
-            max-width: 400px; /* Ancho para móvil */
+            max-width: 400px;
         }
 
         /* LOGO */
@@ -190,12 +190,14 @@
         .info-box-label { font-weight: 700; display: block; margin-bottom: 5px; color: #000; font-size: 0.9rem; }
         .info-box-value { font-size: 0.9rem; color: #333; }
 
+        /* Estilo para el enlace - Usamos la clase que ya tenías */
         .ver-documento {
             color: #285295;
             text-decoration: underline;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
+            font-size: 0.95rem;
         }
         .ver-documento i { margin-left: 5px; font-size: 0.9rem; }
 
@@ -280,10 +282,13 @@
                 </div>
                 <div class="info-box">
                     <span class="info-box-label">Fin:</span>
-                    <span class="info-box-value"></span> </div>
+                    <span class="info-box-value"></span>
+                </div>
                 <div class="info-box">
                     <span class="info-box-label">Ver certificado:</span>
-                    <span class="alberto.pdf">Ver documento <i class="far fa-file"></i></span>
+                    <a href="alberto.pdf" class="ver-documento" target="_blank">
+                        Ver documento <i class="far fa-file"></i>
+                    </a>
                 </div>
             </div>
 
